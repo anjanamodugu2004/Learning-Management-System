@@ -37,18 +37,21 @@ The admin interface allows authorized personnel to manage the content and user d
 Here are some screenshots of the LMS in action:
 
 ### Login Page
-![Login Page]()
+![Login Page](screenshots/login.png)
+
+### About Page
+![About Page](screenshots/about.png)
 
 ### Quiz Section
-![Quiz Section](screenshots/quiz.png)
+![Quiz Section](screenshots/quizzes.png)
 
 ### Performance Analysis
-![Performance Analysis](screenshots/performance_analysis.png)
+![Performance Analysis](screenshots/test_analysis.png)
 
-### Study Materials
-![Study Materials](screenshots/study_materials.png)
+### Admin Content
+![Admin Content](screenshots/admin_content.png)
 
 ### Knowledge Center
-![Knowledge Center](screenshots/knowledge_center.png)
+![Knowledge Center](screenshots/organization_structure.png)
 
 
