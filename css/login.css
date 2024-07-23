@@ -1,0 +1,74 @@
+body, html 
+		{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .photo {
+            flex: 1; /* Take up 50% of the width */
+			padding-left:20px;
+			padding-top:20px;
+			color:green;
+			background-color:white;
+        }
+		.glow {
+  font-size: 80px;
+  color: green;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    
+  }
+ 
+}
+.form-container {
+    flex: 1; /* Take up the other 50% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #022d0cd8; /* Green background */
+	height:100%;
+}
+.form-container form {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #0056b3;
+}

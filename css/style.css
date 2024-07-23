@@ -1,0 +1,502 @@
+/* Main CSS Here */
+
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("https://static.vecteezy.com/system/resources/previews/030/514/071/non_2x/green-background-with-gradient-concept-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 120px;
+}
+
+.boxes {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.boxes h2 {
+    color: #1a1a1a;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+.box-icon {
+    font-size: 48px;
+    color: #2e8b57;
+}
+
+.boxes a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.boxes a:hover {
+    color: #2e8b57;
+}
+
+header {
+  height: 70px;
+  width: 100vw;
+  padding: 0 30px;
+  background-color:white;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 600;
+  color: rgb(47, 141, 70);
+}
+
+.icn {
+  height: 33px;
+}
+.menuicn {
+  cursor: pointer;
+}
+
+.searchbar,
+.message,
+.logosec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar2 {
+  display: none;
+}
+
+.logosec {
+  gap: 60px;
+}
+
+.searchbar input {
+  width: 250px;
+  height: 42px;
+  border-radius: 50px 0 0 50px;
+  background-color:#F3F3F2;
+  padding: 0 20px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+}
+.searchbtn {
+  width: 50px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 50px 50px 0px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.message {
+  gap: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.circle {
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  background-color: #fa7bb4;
+  border-radius: 50%;
+  left: 19px;
+  top: 8px;
+}
+.dp {
+  height: 40px;
+  width: 40px;
+  background-color: #626262;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.main-container {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+}
+.dpicn {
+  height: 42px;
+}
+
+.main {
+  height: calc(100vh - 70px);
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 40px 30px 30px 30px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-image: 
+        linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+}
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+.main::-webkit-scrollbar-track {
+  background-color: #9e9e9eb2;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.nav {
+  min-height: 91vh;
+  width: 250px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 00;
+  box-shadow: 1px 1px 10px rgba(198, 189, 248, 0.825);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 30px 0 20px 10px;
+}
+.navcontainer {
+  height: calc(100vh - 70px);
+  width: 250px;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.navcontainer::-webkit-scrollbar {
+  display: none;
+}
+.navclose {
+  width: 60px;
+}
+.nav-option {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 20px;
+  gap: 20px;
+  transition: all 0.1s ease-in-out;
+}
+button 
+{
+	border-color:white
+}
+.nav-option:hover {
+  border-left: 5px solid #a2a2a2;
+  background-color: green;
+  color:white;
+  cursor: pointer;
+}
+ul {
+    display: flex;
+    gap: 20px; /* Space between the boxes */
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    justify-content: center; /* Center align the boxes */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+  }
+
+  ul li {
+    list-style-type: none; /* Remove bullet points */
+    margin: 10px;
+  }
+
+  ul li a {
+    display: block;
+    width: 200px; /* Width of the box */
+    height: 200px; /* Height of the box */
+    text-align: center; /* Center text horizontally */
+    line-height: 100px; /* Center text vertically */
+    border: 1px solid #000; /* Border for the box */
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Text color */
+    font-weight: bold; /* Bold text */
+    /* Transparency and hover effect */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+  }
+
+  ul li a:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque background on hover */
+    transform: scale(1.1); /* Increase size by 10% on hover */
+  }
+.question-review {
+  margin-top: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.question p {
+  margin: 10px 0;
+}
+
+.answer-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.answer {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+.nav-option.active {
+    background-color: green; 
+    color: white;
+    border-left:5px solid #a2a2a2;
+}
+.nav-img {
+  height: 20px;
+}
+
+.nav-upper-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-decoration:none;
+}
+
+.option1:active,
+.option2:active,
+.option3:active,
+.option4:active {
+    background-color: green;
+	cursor: pointer;
+}
+.a:hover {
+  border-left: 5px solid #010058af;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50px; /* Adjust height as needed */
+  }
+  #footer p {
+    margin: 0;
+    color: white;
+  }
+.box {
+  height: 130px;
+  width: 230px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.box:hover {
+  transform: scale(1.08);
+}
+
+.box:nth-child(1) {
+  background-color: green;
+}
+.box:nth-child(2) {
+  background-color: green;
+}
+.box:nth-child(3) {
+  background-color:green;
+}
+.box:nth-child(4) {
+  background-color: green;
+}
+
+.box img {
+  height: 50px;
+}
+.box .text {
+  color: white;
+}
+.topic {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.topic-heading {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+a 
+{
+	text-decoration:none;
+}
+.report-container {
+  min-height: 160px;
+  background-color:white;
+  width: 85%; /* Change this value to your desired width */
+  margin: 70px auto 0px auto;
+  padding: 20px 20px 20px 20px;
+  text-align:left;
+}
+
+.report-header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  border-bottom: 2px solid rgba(0, 20, 151, 0.59);
+}
+.center-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  padding: 20px;           /* Optional: to center vertically within the viewport */
+}
+table {
+  /* Add any additional styling for your table here */
+  border-collapse: collapse;
+  width: 100%;  /* Adjust as needed */
+}
+
+table,th,td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+table, th {
+  background-color: #f2f2f2;
+}
+.recent-Articles {
+  font-size: 30px;
+  font-weight: 600;
+  color: #5500cb;
+}
+
+.view {
+  height: 35px;
+  width: 90px;
+  border-radius: 8px;
+  background-color: #5500cb;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.option-label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .option-label:hover {
+        background-color: #E9E8E6; /* Change to your desired hover background color */
+    }
+.report-body {
+  max-width: 1160px;
+  overflow-x: auto;
+  padding: 20px;
+}
+.report-topic-heading,
+.item1 {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.t-op {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+.items {
+  width: 1120px;
+  margin-top: 15px;
+}
+
+.item1 {
+  margin-top: 20px;
+}
+.t-op-nextlvl {
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+
+.label-tag {
+  width: 100px;
+  text-align: center;
+  background-color: rgb(0, 177, 0);
+  color: white;
+  border-radius: 4px;
+}
